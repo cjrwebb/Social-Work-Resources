@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1598360765016.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "7E0A37FC",
+    "lastKnownWriteTime" : 1598361014,
+    "last_content_update" : 1598361014926,
+    "path" : "~/Google Drive/Social Work Resources/data_resources/ir_template.Rmd",
+    "project_path" : "data_resources/ir_template.Rmd",
+    "properties" : {
+        "cursorPosition" : "21,51",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
