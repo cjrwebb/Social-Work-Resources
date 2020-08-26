@@ -3,7 +3,6 @@ title: |
   This is the title of the interactive resource
 description: |
   This is a brief summary of the resource. It should be less than 150 characters long. 
-  <br><br><br>
 author:
   - name: Calum Webb
     url: https://www.sheffield.ac.uk/socstudies/people/academic-staff/calum-webb
@@ -16,6 +15,8 @@ author:
 date: "`r Sys.Date()`"
 preview: ../data_resources/promo_1.jpg
 bibliography: ../data_resources/biblio.bib
+categories:
+  - cpd
 output: 
   distill::distill_article:
     includes:
@@ -25,7 +26,7 @@ output:
 <!-- Set any additional styles here -->
 
 <style>
-div.act_box { background-color:rgba(75, 168, 244, 0.3); color:rgba(0, 0, 0, 1); border-radius: 5px; padding: 20px; opacity: 0.5;}
+div.act_box { background-color:rgba(75, 168, 244, 0.3); color:rgba(0, 0, 0, 0.8); border-radius: 5px; padding: 20px;}
 
 </style>
 
@@ -79,7 +80,7 @@ A caption about the graph. These should be interactive if possible (e.g. you can
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 <div class="act_box">
-#### `r fa("highlighter", fill = "#00A0E9", height = "30px")` This is an example of an activity box
+#### `r fa("highlighter", fill = "#00A0E9", height = "30px")`&nbsp;&nbsp; This is an example of an activity box
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -118,7 +119,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ### This is an example of an embedded padlet board
 
-<div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4"><p style="padding:0;margin:0"><iframe src="https://padlet.com/9e4keezwnh/ejeh98s5wek6dbno" frameborder="0" allow="camera;microphone;geolocation" style="width:100%;height:608px;display:none;padding:0;margin:0"
+<div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4"><p style="padding:0;margin:0"><iframe src="https://padlet.com/9e4keezwnh/ejeh98s5wek6dbno" frameborder="0" allow="camera;microphone;geolocation" style="width:100%;height:700px;display:none;padding:0;margin:0"
 onload="this.style.display='block';"></iframe></p><div style="padding:8px;text-align:right;margin:0;"><a href="https://padlet.com?ref=embed" style="padding:0;margin:0;border:none;display:block;line-height:1;height:16px" target="_blank"><img src="https://padlet.net/embeds/made_with_padlet.png" width="86" height="16" style="padding:0;margin:0;background:none;border:none;display:inline;box-shadow:none" alt="Made with Padlet"></a></div></div>
 <hr>
 

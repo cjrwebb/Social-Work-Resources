@@ -1,0 +1,11 @@
+---
+title: "About the SCS Interactive Resources Library"
+description: |
+  The Sociological Studies interactive resources library provides interactive documents that draw on cutting-edge and foundational research in sociology, social work, and social policy, so that students, and social workers pursuing continued professional development, can engage with course reading and material in flexible, engaging, and collaborative ways. 
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+The library is developed and maintained by Dr. [Calum Webb](https://www.sheffield.ac.uk/socstudies/people/academic-staff/calum-webb) and is built using `Distill 0.8` in `R`.

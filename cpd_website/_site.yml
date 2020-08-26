@@ -1,0 +1,15 @@
+name: "cpd_website"
+title: "SCS Social Work Interactive Resources Library"
+description: |
+  SCS Social Work Interactive Resources Library
+output_dir: "_site"
+navbar:
+  logo: tuos_logo_small.jpeg
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+output: 
+  distill::distill_article:
+    css: styles.css
