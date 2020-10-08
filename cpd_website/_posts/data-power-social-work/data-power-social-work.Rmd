@@ -8,18 +8,24 @@ author:
     url: https://www.sheffield.ac.uk/socstudies/people/academic-staff/calum-webb
     affiliation: The University of Sheffield
     affiliation_url: https://www.sheffield.ac.uk
-date: "`r Sys.Date()`"
+date: 08-27-2020
+base_url: http://scslibrary.calumwebb.uk
 preview: "http://scslibrary.calumwebb.uk/posts/data-power-social-work/Media/preview.png"
 bibliography: "../../../data_resources/biblio.bib"
+csl: "../../../data_resources/the-open-university-numeric-superscript.csl"
 categories:
-  - cpd
-  - cpd-4.4
-  - cpd-4.5
-  - cpd-4.8
-  - child-welfare-inequalities
-  - data-skills
+  - "CPD 4.4"
+  - "CPD 4.5"
+  - "CPD 4.8"
+  - "Child welfare inequalities"
+  - "Data Skills"
+twitter:
+ site: "@uniofsheffSW"
+ creator: "@cjrwebb"
+ preview: "http://scslibrary.calumwebb.uk/posts/data-power-social-work/Media/preview.png"
 output: 
   distill::distill_article:
+    toc: true
     includes:
       in_header: "../../../data_resources/header_logo.html"
 ---
@@ -45,7 +51,7 @@ By the end of this resource you will...
 
 * Be able to articulate and reflect on the relationship between quantitative data, political rhetoric, social policy creation, and the inequalities in access to statistical representations of the social world.
 * Have considered how quantitative data could be used to inform social work practice, from engaging with socioeconomic hardship that families face in direct work to strategic planning and social activism more broadly.
-* Have practiced using two online resources for data visualisation to answer questions about trends and patterns in local areas and in children's services nationally.
+* Have practiced using two online resources for data visualisation to answer questions about trends and patterns in local areas and in children's services nationally, and thought critically about how this could be applied to policy and practice using a case study.
 
 <hr>
 
@@ -119,18 +125,20 @@ Identifying these support structures can reduce the impact of socioeconomic ineq
 One way of making geographical data more accessible is to overlay colour coded shapes onto a map, enabling us to combine our tacit knowledge of place with the information contained in official statistics. This requires some technical knowledge, so to make the process easier, I created the Mapping Overlaps Gadget (https://webb.shinyapps.io/MOG_education/) which enabled the creation of these maps without any programming knowledge (other similar tools also exist). Each shape represents a geographical area with a population of around 1,500 for which statistics are routinely calculated. My hope for this is that it achieves a few things: firstly, that it can be useful for recognising hidden local inequalities and implementing preventative and early help and support, and secondly, that it allows us to democratise the visualisation and analysis of local data. Before we move on to the role of power, let me introduce you to the MOG app and show you how it can be used to visualise data in a way that may be helpful for delivering support.
 
 ### Video Example
-<br>
-<center>
 <iframe width="840" height="470" src="https://www.youtube-nocookie.com/embed/KxoYW0jDaAk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
-*In this example, I’ll show you how we can use geographical data to identify whether there are high levels of income deprivation in a neighbourhood. I’ll also show how we can identify compound or intersectional inequalities, for example, areas where there is a high level of health deprivation and poor access to hospitals, where additional support may need to be put in place.*
-</center>
+
+<aside>
+<font size=2>
+In this example, I’ll show you how we can use geographical data to identify whether there are high levels of income deprivation in a neighbourhood. I’ll also show how we can identify compound or intersectional inequalities, for example, areas where there is a high level of health deprivation and poor access to hospitals, where additional support may need to be put in place.
+</font>
+</aside>
 
 <br>
 
-<center>
-<br>
-![A map of Sheffield in the MOG app showing neighbourhoods with high levels of Income Deprivation](Media/image1map.png){width=100%}
+```{r, layout="l-page-outset"}
+knitr::include_graphics("Media/image1map.png")
+```
+
 <br>
 <font size=2>
 *A map of Sheffield in the MOG app showing neighbourhoods with high levels of Income Deprivation*
@@ -138,8 +146,11 @@ One way of making geographical data more accessible is to overlay colour coded s
 </center>
 <br>
 
-<center>
-![A bivariate map of Sheffield showing areas with high levels of health deprivation and disability and low accessibility to hospitals (dark purple)](Media/image2map.png){width=100%}
+
+```{r, layout="l-page-outset"}
+knitr::include_graphics("Media/image2map.png")
+```
+
 <br>
 <font size=2>
 *A bivariate map of Sheffield showing areas with high levels of health deprivation and disability and low accessibility to hospitals (dark purple)*
@@ -149,7 +160,13 @@ One way of making geographical data more accessible is to overlay colour coded s
 
 <br>
 <div class="act_box">
-#### `r fa("mouse-pointer", fill = "#00A0E9", height = "30px")`&nbsp;&nbsp; Exercise
+
+<p style="text-align:right";>
+`r fa("mouse-pointer", fill = "#00A0E9", height = "30px")`
+</p>
+
+
+#### Exercise
 
 1)	Try using the MOG app (https://webb.shinyapps.io/MOG_education/) to explore a potential socioeconomic problem associated with child welfare interventions, mental or physical health problems, or wellness in older age, in an area you’re familiar with. For example, you might want to look at access to green or leisure spaces.
 2)	Consider how you might overlay two pieces of quantitative data to explore multiple complex needs. For example, you could explore the relationship between health, deprivation and disability (HlthDprADS) deprivation score and income deprivation (IncomeScor) score. 
@@ -203,18 +220,26 @@ There were and are, of course, contrasts to this bleakness. The early work of W.
 This is not to say that the contributions of White middle- and upper-class men in quantitative social science were all eugenics and functionalism. Charles Booth and Seebohm Rowntree highlighted the great disparities between the rich and poor, and the need for social security that smoothed income over time to save men and women from poverty in old age. Later, Peter Townsend’s[@walker2010peter] work showed that poverty was not something that could be consigned to the annals of history and was a great injustice in contemporary British society that demanded attention. Today, organisations like the Joseph Rowntree Foundation define a Minimum Income Standard to continue the essence of this argument for those that would rather see the concept of poverty, not poverty itself, abolished. Quantitative social science has the power to do much good. How do we make sure that the modern history we are writing with social statistics contains more light than darkness?
 
 <br> 
-<center>
-![Florence Nightingale’s Famous Visualisation of the Causes of Mortality in the Army in the East](Media/image4fn.png){width=100%}
+
+
+```{r, layout="l-page-outset"}
+knitr::include_graphics("Media/image4fn.png")
+```
 <br>
+<center>
 <font size=2>
 *Florence Nightingale’s Famous Visualisation of the Causes of Mortality in the Army in the East*
 </font>
 </center>
 <br>
  
-<center>
-![One of W.E.B. Du Bois’ Data Portraits of Black America presented at the 1900 Paris Exposition](Media/image5webdb.png){width=100%}
+
+```{r, layout="l-page-outset"}
+knitr::include_graphics("Media/image5webdb.png")
+```
+
 <br>
+<center>
 <font size=2>
 *One of W.E.B. Du Bois’ Data Portraits of Black America presented at the 1900 Paris Exposition*
 </font>
@@ -239,27 +264,36 @@ This was the case with the funding of children’s services between 2010 and 201
 When we showed that this was not the case we had some impact, but our impact was much stronger when we created a way for practitioners and families to engage with the quantitative data on expenditure cuts in an accessible way. It allowed social workers to construct their own quantitative narrative, and therefore countered the powerful statistically supported argument that those in power had with an argument backed with the same numerical power. Even if the power of statistics is unwarranted and illegitimate, its impact cannot be ignored. This is only a small example of the possibilities of shifting data power. We have a long way to go and social workers, proud of their heritage of promoters of social justice, might be at the forefront of doing so.
 
 ### Video Example 
-<center>
+
 <iframe width="840" height="470" src="https://www.youtube-nocookie.com/embed/6peO5QJ7bg0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
-*Using the Child Welfare Inequalities Project App ([www.cwip-app.co.uk](www.cwip-app.co.uk)) I will demonstrate how data can be easily accessed and visualised, and the role this might play in challenging who ‘holds the keys’ to data-related power.*
-</center>
-<br>
-<center>
+
+<aside>
+<font size=2>
+Using the Child Welfare Inequalities Project App ([www.cwip-app.co.uk](www.cwip-app.co.uk)) I will demonstrate how data can be easily accessed and visualised, and the role this might play in challenging who ‘holds the keys’ to data-related power.
+</font>
+</aside>
+
 <br>
 <br>
 ![Line graphs showing how expenditure per child has fallen in Sheffield since 2010, and how the proportion of spending on early help and family support has reduced over time.](Media/image6line.png){width=100%}
-<br>
+
+<aside>
 <font size=2>
-*Line graphs showing how expenditure per child has fallen in Sheffield since 2010, and how the proportion of spending on early help and family support has reduced over time.*
+Line graphs showing how expenditure per child has fallen in Sheffield since 2010, and how the proportion of spending on early help and family support has reduced over time.
 </font>
-<br>
+</aside>
+
 <br>
 </center>
 
 <br>
 <div class="act_box">
-#### `r fa("chart-line", fill = "#00A0E9", height = "30px")`&nbsp;&nbsp; Exercise
+
+<p style="text-align:right";>
+`r fa("chart-line", fill = "#00A0E9", height = "30px")`
+</p>
+
+#### Exercise
 
 * Using the CWIP App (https://www.cwip-app.co.uk), look at how funding has changed in Children’s Services in the past decade and consider how this compares to changes in intervention rates in an area you’re familiar with. What kind of story does this data tell?
 
@@ -320,6 +354,12 @@ Mandy's previous address was in Meersbrook, Sheffield. Her new address in suppor
 
 # Padlet Discussion
 
-<div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4"><p style="padding:0;margin:0"><iframe src="https://padlet.com/embed/i39dbk7hpuverace" frameborder="0" allow="camera;microphone;geolocation" style="width:100%;height:700px;display:none;padding:0;margin:0"
+<div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4"><p style="padding:0;margin:0"><iframe src="https://padlet.com/embed/i39dbk7hpuverace" frameborder="0" allow="camera;microphone;geolocation" style="width:100%;height:800px;display:none;padding:0;margin:0"
 onload="this.style.display='block';"></iframe></p><div style="padding:8px;text-align:right;margin:0;"><a href="https://padlet.com?ref=embed" style="padding:0;margin:0;border:none;display:block;line-height:1;height:16px" target="_blank"><img src="https://padlet.net/embeds/made_with_padlet.png" width="86" height="16" style="padding:0;margin:0;background:none;border:none;display:inline;box-shadow:none" alt="Made with Padlet"></a></div></div>
+
+<aside>
+<font size=2>
+Is quantitative data useful for social work practice? Does it play a part in promoting social justice? Is access a barrier that can (or should) be overcome? What interesting things did you find exploring local data? Any bright ideas for its use in practice? If you have lived experience with social services, what kind of ways would you have liked social workers to use data?
+</font>
+</aside>
 

@@ -1421,19 +1421,28 @@
 }
 
 .posts-list .metadata .publishedDate {
-  margin-right: 1em;
+  margin-right: 2em;
 }
 
-.posts-list .metadata .tags {
-  margin-top: 1em;
+.posts-list .metadata .dt-authors {
+  display: block;
+  margin-top: 0.3em;
+  margin-right: 2em;
 }
 
-.posts-list .tags .tag {
-  color: rgba(0,0,0,0.67);
-  padding: 0.3em 0.5em;
-  margin: 0;
-  font-size: 80%;
-  border: 1px solid rgba(0,0,0,0.4);
+.posts-list .dt-tags {
+  display: block;
+  line-height: 1em;
+}
+
+.posts-list .dt-tags .dt-tag {
+  display: inline-block;
+  color: rgba(0,0,0,0.6);
+  padding: 0.3em 0.4em;
+  margin-right: 0.2em;
+  margin-bottom: 0.4em;
+  font-size: 60%;
+  border: 1px solid rgba(0,0,0,0.2);
   border-radius: 3px;
   text-transform: uppercase;
   font-weight: 500;
@@ -1502,7 +1511,7 @@
   }
   .posts-list .post-preview .thumbnail {
     float: right;
-    width: 35%;
+    width: 30%;
     margin-bottom: 0;
   }
   .posts-list .post-preview .description {
@@ -1511,7 +1520,7 @@
   }
   .posts-list .post-preview .metadata {
     float: left;
-    width: 15%;
+    width: 20%;
     margin-top: 8px;
   }
   .posts-list .post-preview p {
@@ -1521,7 +1530,7 @@
   }
   .posts-with-sidebar .posts-list {
     float: left;
-    width: 72%;
+    width: 75%;
   }
   .posts-with-sidebar .posts-sidebar {
     float: right;
@@ -1588,16 +1597,16 @@ function init_posts_list() {
     set_posts_visible($('.posts-list').children('a'), false);
 
     // if we have a hash filter
-    if (window.location.hash) {
+    if (window.location.hash && window.location.hash.startsWith("#category:")) {
 
       // mark posts that match the category visible
-      var page_category = window.location.hash.replace("#", "");
+      var page_category = window.location.hash.replace(/^#category:/, "");
       var posts = $('.post-metadata').map(function(idx, script) {
         var metadata = $.parseJSON($(script).html());
         var post = null;
         $.each(metadata.categories, function(idx, category) {
           category = category.replace(/ /g,"_");
-          if (category == page_category) {
+          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
             post = $(script).parent().get();
             return false;
           }
@@ -1609,10 +1618,22 @@ function init_posts_list() {
       // mark the hash active
       $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
 
+      // update the list_caption
+      var list_caption = $('.posts-list-caption');
+      var caption = (page_category || '').toLowerCase() === "articles"
+        ? list_caption.attr('data-caption')
+        : ('Category: ' + page_category.replace(/_/g," "));
+      list_caption.text(caption);
+
     } else {
 
       // no hash filter, make all posts visible (subject to max display)
       set_posts_visible($('.posts-list').children(), true);
+
+      // reset list caption
+      var list_caption = $('.posts-list-caption');
+      list_caption.text(list_caption.attr('data-caption'));
+
 
     }
   }
@@ -1627,6 +1648,12 @@ function init_posts_list() {
       $('.posts-more a').addClass('hidden');
     }
   }
+
+  // click handling for tags
+  $('.dt-tag').click(function(ev) {
+    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
+    return false;
+  })
 
   // hash filter handling
   apply_hash_filter();
@@ -1651,18 +1678,78 @@ function init_posts_list() {
 
 <div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
 <div class="posts-list">
-<h1 class="posts-list-caption">Welcome to the library</h1>
-<a href="posts/data-power-social-work/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["cpd","cpd-4.4","cpd-4.5","cpd-4.8","child-welfare-inequalities","data-skills"]}</script>
+<h1 class="posts-list-caption" data-caption="Welcome to the library">Welcome to the library</h1>
+<a href="posts/introducing-cwi-1-poverty/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["CPD 4.1","CPD 4.4","CPD 4.5","CPD 4.6","CPD 4.8","Child welfare inequalities","Poverty-aware Practice"]}</script>
 <div class="metadata">
-<div class="publishedDate">Aug. 27, 2020</div>
+<div class="publishedDate">Oct. 6, 2020</div>
+<div class="dt-authors">
+<div class="dt-author">Calum Webb</div>
+</div>
 </div>
 <div class="thumbnail">
-<img data-src="http://scslibrary.calumwebb.uk/posts/data-power-social-work/Media/preview.png"/>
+<img src="http://scslibrary.calumwebb.uk/posts/introducing-cwi-1-poverty/media/swingset-snow.jpg"/>
+</div>
+<div class="description">
+<h2>Introducing Child Welfare Inequalities I: Poverty
+</h2>
+<div class="dt-tags">
+<div class="dt-tag">CPD 4.1</div>
+<div class="dt-tag">CPD 4.4</div>
+<div class="dt-tag">CPD 4.5</div>
+<div class="dt-tag">CPD 4.6</div>
+<div class="dt-tag">CPD 4.8</div>
+<div class="dt-tag">Child welfare inequalities</div>
+<div class="dt-tag">Poverty-aware Practice</div>
+</div>
+<p>This interactive resource is designed to provide an introduction to the idea of child welfare inequalities, their scale, and why they are important, focusing firstly on poverty. You will explore: What are child welfare inequalities and why are they important? What do we currently know about socioeconomic inequalities in intervention? What unanswered questions are there, what framework can we use to understand them, and what are the current policy and practice recommendations?</p>
+</div>
+</a>
+<a href="posts/intersection-ethnicity-deprivation/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["CPD 4.4","CPD 4.5","CPD 4.8","Child welfare inequalities","Data Skills","Poverty-aware Practice"]}</script>
+<div class="metadata">
+<div class="publishedDate">Sept. 13, 2020</div>
+<div class="dt-authors">
+<div class="dt-author">Calum Webb</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="http://scslibrary.calumwebb.uk/posts/intersection-ethnicity-deprivation/Media/preview.jpg"/>
+</div>
+<div class="description">
+<h2>Child Welfare Interventions at the Intersection of Ethnicity and Deprivation</h2>
+<div class="dt-tags">
+<div class="dt-tag">CPD 4.4</div>
+<div class="dt-tag">CPD 4.5</div>
+<div class="dt-tag">CPD 4.8</div>
+<div class="dt-tag">Child welfare inequalities</div>
+<div class="dt-tag">Data Skills</div>
+<div class="dt-tag">Poverty-aware Practice</div>
+</div>
+<p>This resource explores the way that intervention rates in child populations differ according to deprivation and ethnicity. It introduces findings from the Child Welfare Inequalities Project that highlight that socioeconomic inequalities in child welfare interventions differ according to ethnicity. You will explore: What does ethnic disproportionality look like at a national level and in differently deprived neighbourhoods? How can you interpret ethnic disproportionality using incidence rate ratios? And how can this knowledge be used to think critically about challenging racism in children's services?</p>
+</div>
+</a>
+<a href="posts/data-power-social-work/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["CPD 4.4","CPD 4.5","CPD 4.8","Child welfare inequalities","Data Skills"]}</script>
+<div class="metadata">
+<div class="publishedDate">Aug. 27, 2020</div>
+<div class="dt-authors">
+<div class="dt-author">Calum Webb</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="http://scslibrary.calumwebb.uk/posts/data-power-social-work/Media/preview.png"/>
 </div>
 <div class="description">
 <h2>Data(,) Power &amp; Social Work
 </h2>
+<div class="dt-tags">
+<div class="dt-tag">CPD 4.4</div>
+<div class="dt-tag">CPD 4.5</div>
+<div class="dt-tag">CPD 4.8</div>
+<div class="dt-tag">Child welfare inequalities</div>
+<div class="dt-tag">Data Skills</div>
+</div>
 <p>This resource explores the relevance of quantitative, statistical data for social work, and what role it could have in anti-oppressive practice. You will explore: What is the relationship between data, statistics, changes in children's services, and advocacy? How is data used as a political tool in social work? How can data be harnessed within a social model of child protection?</p>
 </div>
 </a>
@@ -1672,28 +1759,40 @@ function init_posts_list() {
 <h3>Categories</h3>
 <ul>
 <li>
-<a href="#child-welfare-inequalities">child-welfare-inequalities</a>
+<a href="#category:Articles">Articles</a>
+<span class="category-count">(3)</span>
+</li>
+<li>
+<a href="#category:Child_welfare_inequalities">Child welfare inequalities</a>
+<span class="category-count">(3)</span>
+</li>
+<li>
+<a href="#category:CPD_4.1">CPD 4.1</a>
 <span class="category-count">(1)</span>
 </li>
 <li>
-<a href="#cpd">cpd</a>
+<a href="#category:CPD_4.4">CPD 4.4</a>
+<span class="category-count">(3)</span>
+</li>
+<li>
+<a href="#category:CPD_4.5">CPD 4.5</a>
+<span class="category-count">(3)</span>
+</li>
+<li>
+<a href="#category:CPD_4.6">CPD 4.6</a>
 <span class="category-count">(1)</span>
 </li>
 <li>
-<a href="#cpd-4.4">cpd-4.4</a>
-<span class="category-count">(1)</span>
+<a href="#category:CPD_4.8">CPD 4.8</a>
+<span class="category-count">(3)</span>
 </li>
 <li>
-<a href="#cpd-4.5">cpd-4.5</a>
-<span class="category-count">(1)</span>
+<a href="#category:Data_Skills">Data Skills</a>
+<span class="category-count">(2)</span>
 </li>
 <li>
-<a href="#cpd-4.8">cpd-4.8</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#data-skills">data-skills</a>
-<span class="category-count">(1)</span>
+<a href="#category:Poverty-aware_Practice">Poverty-aware Practice</a>
+<span class="category-count">(2)</span>
 </li>
 </ul>
 </div>
