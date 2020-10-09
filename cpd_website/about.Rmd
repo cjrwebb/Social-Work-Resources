@@ -8,4 +8,4 @@ description: |
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-The library is developed and maintained by Dr. [Calum Webb](https://www.sheffield.ac.uk/socstudies/people/academic-staff/calum-webb) and is built using `Distill 0.8` in `R`.
+The library is developed and maintained by Dr. [Calum Webb](https://www.sheffield.ac.uk/socstudies/people/academic-staff/calum-webb) and is built using `Distill 1.0` in `R`.

@@ -135,28 +135,16 @@ In this example, I’ll show you how we can use geographical data to identify wh
 
 <br>
 
-```{r, layout="l-page-outset"}
+```{r, layout="l-page-outset", fig.cap="A map of Sheffield in the MOG app showing neighbourhoods with high levels of Income Deprivation"}
 knitr::include_graphics("Media/image1map.png")
 ```
 
 <br>
-<font size=2>
-*A map of Sheffield in the MOG app showing neighbourhoods with high levels of Income Deprivation*
-</font>
-</center>
-<br>
 
 
-```{r, layout="l-page-outset"}
+```{r, layout="l-page-outset", fig.cap="A bivariate map of Sheffield showing areas with high levels of health deprivation and disability and low accessibility to hospitals (dark purple)"}
 knitr::include_graphics("Media/image2map.png")
 ```
-
-<br>
-<font size=2>
-*A bivariate map of Sheffield showing areas with high levels of health deprivation and disability and low accessibility to hospitals (dark purple)*
-</font>
-</center>
-<br>
 
 <br>
 <div class="act_box">
@@ -222,30 +210,14 @@ This is not to say that the contributions of White middle- and upper-class men i
 <br> 
 
 
-```{r, layout="l-page-outset"}
+```{r, layout="l-page-outset", fig.cap="Florence Nightingale’s Famous Visualisation of the Causes of Mortality in the Army in the East"}
 knitr::include_graphics("Media/image4fn.png")
 ```
-<br>
-<center>
-<font size=2>
-*Florence Nightingale’s Famous Visualisation of the Causes of Mortality in the Army in the East*
-</font>
-</center>
-<br>
- 
 
-```{r, layout="l-page-outset"}
+
+```{r, layout="l-page-outset", fig.cap="One of W.E.B. Du Bois’ Data Portraits of Black America presented at the 1900 Paris Exposition"}
 knitr::include_graphics("Media/image5webdb.png")
 ```
-
-<br>
-<center>
-<font size=2>
-*One of W.E.B. Du Bois’ Data Portraits of Black America presented at the 1900 Paris Exposition*
-</font>
-<br>
-<br>
-</center>
 
 ## Redistributing data power
 
@@ -275,16 +247,15 @@ Using the Child Welfare Inequalities Project App ([www.cwip-app.co.uk](www.cwip-
 
 <br>
 <br>
-![Line graphs showing how expenditure per child has fallen in Sheffield since 2010, and how the proportion of spending on early help and family support has reduced over time.](Media/image6line.png){width=100%}
 
-<aside>
-<font size=2>
-Line graphs showing how expenditure per child has fallen in Sheffield since 2010, and how the proportion of spending on early help and family support has reduced over time.
-</font>
-</aside>
+```{r, layout='l-page-outset', fig.cap="Line graphs showing how expenditure per child has fallen in Sheffield since 2010, and how the proportion of spending on early help and family support has reduced over time."}
+
+knitr::include_graphics("Media/image6line.png")
+
+```
 
 <br>
-</center>
+
 
 <br>
 <div class="act_box">

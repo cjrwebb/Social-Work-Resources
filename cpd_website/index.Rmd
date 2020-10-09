@@ -1,5 +1,11 @@
 ---
-title: Welcome to the library
+title: " "
 site: distill::distill_website
 listing: posts
+base_url: http://scslibrary.calumwebb.uk
+preview: http://scslibrary.calumwebb.uk/posts/introducing-cwi-1-poverty/media/swingset-snow.jpg
+twitter: 
+  site: "@cjrwebb"
+  preview: http://scslibrary.calumwebb.uk/posts/introducing-cwi-1-poverty/media/swingset-snow.jpg
+creative_commons: CC BY-NC
 ---

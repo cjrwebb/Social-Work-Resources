@@ -107,6 +107,13 @@ We then tend to make the logical error of assuming we can simply 'add together' 
 
 The importance of intersectionality can't be understated, and while it is still largely associated with the social sciences and critical social theory, the concept has been essential in improving clinical and epidemiological research.[@mullings2006intersectionality; @bauer2014incorporating; @holman2020mapping] As briefly discussed, and as this resource will go on to demonstrate below, it is essential for social workers to develop an intersectional understanding of (at least) the intersection of ethnicity and deprivation to understand child welfare inequalities.
 
+<center>
+<iframe width="560" height="385" src="https://www.youtube-nocookie.com/embed/rwqnC1fy_zc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+<aside><font size = 2>Watch the following animated explanation of intersectionality from [Dan Holman](https://www.sheffield.ac.uk/socstudies/people/academic-staff/daniel-holman), [Sarah Salway](https://www.sheffield.ac.uk/socstudies/people/academic-staff/sarah-salway), and [Andrew Bell](https://www.sheffield.ac.uk/smi/people/academic/andrew-bell) at the University of Sheffield. You can find out more about their project 'Intersectional Health' [here](https://intersectionalhealth.org).</font></aside>
+
+
 ## Ethnicity, deprivation, motherhood, and childhood
 
 There is not the space here to discuss in depth all of the possible combinations of experiences, cultural stereotypes, and institutionalised biases and prejudices that are relevant to child and family social work and which underpin child welfare inequalities. However, a few pieces of research and writing about some specific intersections of gender, ethnicity, and class, in relation to motherhood and childhood may be worth mentioning, as they can help us think critically about our the unequal intervention rates we see in social work. Perceptions of parents behaviour and children's behaviour are often filtered through the lens of 'race' and socioeconomic status.
@@ -121,15 +128,9 @@ Again, these are only a few examples, but they show how thinking in an intersect
 
 <br>
 
-```{r, layout="l-page-outset"}
+```{r, layout="l-page-outset", fig.cap="Vicky Pollard, a character in Matt Lucas and David Walliam's 'Little Britain'"}
 knitr::include_graphics("Media/vicky-pollard-2.jpg")
 ```
-
-<center>
-<font size=2>
-*Vicky Pollard, a character in Matt Lucas and David Walliam's 'Little Britain'*
-</font>
-</center>
 
 <br>
 
