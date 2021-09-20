@@ -9,8 +9,7 @@ author:
     affiliation: The University of Sheffield
     affiliation_url: https://www.sheffield.ac.uk
 date: 08-27-2020
-base_url: http://scslibrary.calumwebb.uk
-preview: "http://scslibrary.calumwebb.uk/posts/data-power-social-work/Media/preview.png"
+preview: http://scslibrary.calumwebb.uk/posts/data-power-social-work/Media/preview.png
 bibliography: "../../../data_resources/biblio.bib"
 csl: "../../../data_resources/the-open-university-numeric-superscript.csl"
 categories:
@@ -22,7 +21,6 @@ categories:
 twitter:
  site: "@uniofsheffSW"
  creator: "@cjrwebb"
- preview: "http://scslibrary.calumwebb.uk/posts/data-power-social-work/Media/preview.png"
 output: 
   distill::distill_article:
     toc: true
@@ -34,6 +32,11 @@ output:
 
 <style>
 div.act_box { background-color:rgba(75, 168, 244, 0.3); color:rgba(0, 0, 0, 0.8); border-radius: 5px; padding: 20px;}
+
+.right {
+  float: right;
+}
+
 
 </style>
 
@@ -125,7 +128,7 @@ Identifying these support structures can reduce the impact of socioeconomic ineq
 One way of making geographical data more accessible is to overlay colour coded shapes onto a map, enabling us to combine our tacit knowledge of place with the information contained in official statistics. This requires some technical knowledge, so to make the process easier, I created the Mapping Overlaps Gadget (https://webb.shinyapps.io/MOG_education/) which enabled the creation of these maps without any programming knowledge (other similar tools also exist). Each shape represents a geographical area with a population of around 1,500 for which statistics are routinely calculated. My hope for this is that it achieves a few things: firstly, that it can be useful for recognising hidden local inequalities and implementing preventative and early help and support, and secondly, that it allows us to democratise the visualisation and analysis of local data. Before we move on to the role of power, let me introduce you to the MOG app and show you how it can be used to visualise data in a way that may be helpful for delivering support.
 
 ### Video Example
-<iframe width="840" height="470" src="https://www.youtube-nocookie.com/embed/KxoYW0jDaAk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="840" height="470" src="https://www.youtube-nocookie.com/embed/KxoYW0jDaAk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>
 
 <aside>
 <font size=2>
@@ -149,9 +152,9 @@ knitr::include_graphics("Media/image2map.png")
 <br>
 <div class="act_box">
 
-<p style="text-align:right";>
+<div class = "right">
 `r fa("mouse-pointer", fill = "#00A0E9", height = "30px")`
-</p>
+</div>
 
 
 #### Exercise
@@ -237,7 +240,7 @@ When we showed that this was not the case we had some impact, but our impact was
 
 ### Video Example 
 
-<iframe width="840" height="470" src="https://www.youtube-nocookie.com/embed/6peO5QJ7bg0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="840" height="470" src="https://www.youtube-nocookie.com/embed/6peO5QJ7bg0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>
 
 <aside>
 <font size=2>
@@ -260,9 +263,9 @@ knitr::include_graphics("Media/image6line.png")
 <br>
 <div class="act_box">
 
-<p style="text-align:right";>
+<div class = "right">
 `r fa("chart-line", fill = "#00A0E9", height = "30px")`
-</p>
+</div>
 
 #### Exercise
 
@@ -285,9 +288,9 @@ knitr::include_graphics("Media/image6line.png")
 
 <div class="act_box">
 
-<p style="text-align:right";>
+<div class = "right">
 `r fa("user-friends", fill = "#00A0E9", height = "30px")`
-</p>
+</div>
 
 ## Case study
 
@@ -326,7 +329,8 @@ Mandy's previous address was in Meersbrook, Sheffield. Her new address in suppor
 # Padlet Discussion
 
 <div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4"><p style="padding:0;margin:0"><iframe src="https://padlet.com/embed/i39dbk7hpuverace" frameborder="0" allow="camera;microphone;geolocation" style="width:100%;height:800px;display:none;padding:0;margin:0"
-onload="this.style.display='block';"></iframe></p><div style="padding:8px;text-align:right;margin:0;"><a href="https://padlet.com?ref=embed" style="padding:0;margin:0;border:none;display:block;line-height:1;height:16px" target="_blank"><img src="https://padlet.net/embeds/made_with_padlet.png" width="86" height="16" style="padding:0;margin:0;background:none;border:none;display:inline;box-shadow:none" alt="Made with Padlet"></a></div></div>
+onload="this.style.display='block';"
+data-external="1"></iframe></p><div style="padding:8px;text-align:right;margin:0;"><a href="https://padlet.com?ref=embed" style="padding:0;margin:0;border:none;display:block;line-height:1;height:16px" target="_blank"><img src="https://padlet.net/embeds/made_with_padlet.png" width="86" height="16" style="padding:0;margin:0;background:none;border:none;display:inline;box-shadow:none" alt="Made with Padlet"></a></div></div>
 
 <aside>
 <font size=2>

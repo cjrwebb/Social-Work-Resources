@@ -9,9 +9,9 @@ author:
     affiliation: The University of Sheffield
     affiliation_url: https://www.sheffield.ac.uk
 date: 10-07-2020
-base_url: http://scslibrary.calumwebb.uk
-preview: "http://scslibrary.calumwebb.uk/posts/introducing-cwi-1-poverty/media/swingset-snow.jpg"
-citation_package: natbib
+base_url: http://scslibrary.calumwebb.uk/
+preview: "media/preview.png"
+image: "media/preview.png"
 bibliography: "../../../data_resources/biblio.bib"
 csl: "../../../data_resources/the-open-university-numeric-superscript.csl"
 categories:
@@ -25,7 +25,7 @@ categories:
 twitter:
  site: "@uniofsheffSW"
  creator: "@cjrwebb"
- preview: "http://scslibrary.calumwebb.uk/posts/introducing-cwi-1-poverty/media/swingset-snow.jpg"
+ image: "http://scslibrary.calumwebb.uk/posts/introducing-cwi-1-poverty/media/preview.png"
 output: 
   distill::distill_article:
     toc: true
@@ -48,6 +48,11 @@ output:
 div.act_box { background-color:rgba(75, 168, 244, 0.3); color:rgba(0, 0, 0, 0.8); border-radius: 5px; padding: 20px;}
 
 div.revis_box { background-color:rgba(246, 214, 100, 0.3); color:rgba(0, 0, 0, 0.8); border-radius: 5px; padding: 20px;}
+
+.right {
+  float: right;
+}
+
 
 </style>
 
@@ -116,7 +121,7 @@ However, successive governments have refused to enact the socioeconomic duty as 
 The following video is from the earlier stages of the Child Welfare Inequalities Project that outlines why child welfare inequalities are important. It also explains the 'Inverse Intervention Law', which this resource will go on to talk about.  The figures in the video are slightly different to the final, representative estimates of child welfare inequalities in England.
 
 
-<iframe width="840" height="470" src="https://www.youtube-nocookie.com/embed/j0IEYnrt0KY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="840" height="470" src="https://www.youtube-nocookie.com/embed/j0IEYnrt0KY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>
 
 <aside>
 <font size = 2>
@@ -129,9 +134,8 @@ The Child Welfare Inequalities Project was funded by the Nuffield Foundation, an
 There has also been [a podcast](https://www.youtube.com/watch?v=7AE-BHvg4J8) from the British Association of Social Workers about Child Welfare Inequalities, with Professor Paul Bywaters, Professor Brid Featherstone, and Professor Kate Morris, the principal investigators of the Child Welfare Inequalities Project, which you may wish to listen to for a full overview of the project findings. 
 
 <div class = "revis_box">
-<p style="text-align:right";>
-`r fa("lightbulb", fill = "#C7BF78", height = "30px")`
-</p>
+
+<div class = "right">`r fa("lightbulb", fill = "#C7BF78", height = "30px")`</div>
 
 **Socioeconomic status** refers to a person's combined social and economic position and resources in society, usually measured by a combination of education, occupation, and income.[@baker2014socioeconomic] This is usually based on Bourdieusian  ideas of capital, which he divided into *economic*, *social*, *cultural* and *symbolic*.[@wacquant2006pierre] In practice, the first three are usually used in reference to socioeconomic status. As an oversimplified summary, *economic* capital refers to fairly self-explanatory income, wealth, and other material resources. *Social* capital refers to valuable connections with other people or institutions that can be used to a person's benefit, for example, if a parent knows a headteacher at a local grammar school and uses this connection to get information and resources to assist with their child's application, they are leveraging their social capital. *Cultural* capital refers to knowledge that is often passed on from parents or communities to children, in relation to how these different skills are valued; it is commonly seen in levels of education. For example, the family around a child may provide greater resources about literature by providing 'classical' books and encouraging reading, which a child would likely be able to use in their life to their own advantage (e.g. to create social capital). Importantly, cultural capital's worth depends on what the wider society sees as valuable - a similar family might encourage the same amount of reading but they may not have the pre-existing cultural capital to know what kinds of books are 'valuable' for their child to read. The Indices of Multiple Deprivation (IMD) is a geographic measure that captures deprivation, which we often use to approximate socioeconomic status.
 
@@ -219,7 +223,7 @@ Further research by Rick Hood, et al. has shown that different levels of socioec
 
 ## Unpacking the relationship between poverty and child protection
 
-<iframe width="840" height="470" src="https://www.youtube-nocookie.com/embed/Zf2x3zMfKWk?start=92;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="840" height="470" src="https://www.youtube-nocookie.com/embed/Zf2x3zMfKWk?start=92;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>
 
 <aside>
 <font size=2>
@@ -239,7 +243,7 @@ Lastly, Roberts highlights the over-surveillance of families living in poverty a
 
 This is most notable in contemporary social work practice in the use of predictive analytics and tools that purport to identify abuse or neglect.[@eubanks2018automating; @keddell2019algorithmic] These tools are usually built on public datasets that collect information about things like benefits and social housing uptake, missed council tax payments, hospital and GP appointments or admissions, or free school meal eligibility. More affluent families are able to avoid even being 'in' the system in any meaningful way, whereas poor families are 'logged into' it routinely, usually as a result of services and support they need because of poverty. They are entitled to these kinds of support and taking up such services demonstrates actions in the best interests of their children, but in reality accessing this support often ends up used as a conscious or unconscious mark against families.[@langstonforthcominggood; @eubanks2018automating]
 
-The end result is a vicious cycle where reaching for support can be later used as a risk factor to justify child protection involvement. This doesn't just influence algorithms or predictive analytics, which pick up these patterns by design. Such records are commonly brought into reports as evidence of risk. If this has the desired effect of strengthening cases, the technique then become more likely to be used. In response, parents may be less likely to take up the benefits and support services they are entitled too, which might worsen the impact of poverty on their own and their children's lives. Although, paradoxically, doing so may shield them from the gaze of social services. 
+The end result is a vicious cycle where reaching for support can be later used as a risk factor to justify child protection involvement. This doesn't just influence algorithms or predictive analytics, which pick up these patterns by design. Such records are commonly brought into reports as evidence of risk. If this has the desired effect of strengthening cases, the technique then become more likely to be used. In response, parents may be less likely to take up the benefits and support services they are entitled to, which might worsen the impact of poverty on their own and their children's lives. Although, paradoxically, doing so may shield them from the gaze of social services. 
 
 
 
@@ -251,11 +255,10 @@ The inverse intervention law refers to the finding that local authorities with h
 
 <br>
 <div class = "revis_box">
-<p style="text-align:right";>
-`r fa("lightbulb", fill = "#C7BF78", height = "30px")`
-</p>
 
-**Income inequality** refers to how fairly distributed all of the income earned in a place or setting (a nation, a local authority, an organisation, or the entire world) is across everyone who lives or works there. For example, if the total amount of income learned in a local authority with 10,000 people living in it was £300,000,000 (£300million), and every single person had an income of £30,000, we would call this a local authority with a perfectly equal income distribution. Instead, if only one of the 10,000 people earned all £300million of the income, and everyone else earned £0, this would be a perfectly unequal income distribution. A number called a Gini Coefficient is usually calculated to express how equal or unequal an income distribution is. It is a scale from 0 to 1, sometimes expressed as a percentage (0%-100%), where 0 means that every single person receives an identical share of income and 1 means that one person receives all of the income and everyone else receives nothing. The UK has a Gini coefficient of around 0.35, the USA has a Gini coefficient of around 0.434, Sweden has a Gini coefficient of around 0.28. The Gini coefficient of the entire world is estimated to be between 0.61 and 0.68.
+<div class = "right">`r fa("lightbulb", fill = "#C7BF78", height = "30px")`</div>
+
+**Income inequality** refers to how fairly distributed all of the income earned in a place or setting (a nation, a local authority, an organisation, or the entire world) is across everyone who lives or works there. For example, if the total amount of income earned in a local authority with 10,000 people living in it was £300,000,000 (£300million), and every single person had an income of £30,000, we would call this a local authority with a perfectly equal income distribution. Instead, if only one of the 10,000 people earned all £300million of the income, and everyone else earned £0, this would be a perfectly unequal income distribution. A number called a Gini Coefficient is usually calculated to express how equal or unequal an income distribution is. It is a scale from 0 to 1, sometimes expressed as a percentage (0%-100%), where 0 means that every single person receives an identical share of income and 1 means that one person receives all of the income and everyone else receives nothing. The UK has a Gini coefficient of around 0.35, the USA has a Gini coefficient of around 0.434, Sweden has a Gini coefficient of around 0.28. The Gini coefficient of the entire world is estimated to be between 0.61 and 0.68.
 
 </div>
 <br>
@@ -364,7 +367,7 @@ In Sunderland, a middle-earning salary in a profession with fairly standardised 
 
 <br>
 
-<iframe src="https://www.google.com/maps/embed?pb=!4v1602086717105!6m8!1m7!1sbdzowbDYET7YYo65CjZd7Q!2m2!1d54.89689879046756!2d-1.493145921426356!3f339.4669946534618!4f-7.778891356493901!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1602086717105!6m8!1m7!1sbdzowbDYET7YYo65CjZd7Q!2m2!1d54.89689879046756!2d-1.493145921426356!3f339.4669946534618!4f-7.778891356493901!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" data-external="1"></iframe>
 
 <aside>
 <font size=2>
@@ -373,7 +376,7 @@ One of Sunderland's least deprived Lower Super Output Areas, near Pattinson Road
 </aside>
 <br>
 
-<iframe src="https://www.google.com/maps/embed?pb=!4v1602087201203!6m8!1m7!1sZex0rmjnhimOlnIF2UV_cQ!2m2!1d51.4444184457374!2d-0.9029664642045893!3f244.69586296448418!4f-5.50061464711105!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1602087201203!6m8!1m7!1sZex0rmjnhimOlnIF2UV_cQ!2m2!1d51.4444184457374!2d-0.9029664642045893!3f244.69586296448418!4f-5.50061464711105!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" data-external="1"></iframe>
 
 <aside>
 <font size=2>
@@ -454,17 +457,16 @@ The British Association of Social Workers and the Child Welfare Inequalities Pro
 
 
 <div class = "act_box">
-<p style="text-align:right";>
-`r fa("book-reader", fill = "#00A0E9", height = "30px")`
-</p>
+
+<div class = "right">`r fa("book-reader", fill = "#00A0E9", height = "30px")`</div>
 
 ### Policies and Systems Messages from the BASW Anti-Poverty Practice Guide for Social Work
 
 <br>
 
-<p style="text-align:right";>
+<div class = "right">
 `r fa("table", fill = "#00A0E9", height = "30px")`
-</p>
+</div>
 
 #### 1. Using and understanding data
 
@@ -474,9 +476,7 @@ The demographic profile of an area can become taken-for-granted knowledge for so
 
 <br>
 
-<p style="text-align:right";>
-`r fa("users", fill = "#00A0E9", height = "30px")`
-</p>
+<div class = "right">`r fa("users", fill = "#00A0E9", height = "30px")`</div>
 
 #### 2. Knowing local communities
 
@@ -486,9 +486,9 @@ Some social workers in the CWIP study had developed a stigmatising narrative abo
 
 <br>
 
-<p style="text-align:right";>
+<div class = "right">
 `r fa("project-diagram", fill = "#00A0E9", height = "30px")`
-</p>
+</div>
 
 #### 3. Building and maintaining interagency
 
@@ -496,9 +496,9 @@ The extent to which alliances have been formed with anti-poverty organisations v
 
 <br>
 
-<p style="text-align:right";>
+<div class = "right">
 `r fa("people-carry", fill = "#00A0E9", height = "30px")`
-</p>
+</div>
 
 #### 4. Involving communities and families
 
@@ -508,9 +508,9 @@ For social work to understand the impact of socioeconomic conditions on communit
 
 <br>
 
-<p style="text-align:right";>
+<div class = "right">
 `r fa("city", fill = "#00A0E9", height = "30px")`
-</p>
+</div>
 
 #### 1. Community social work practice
 
@@ -518,9 +518,9 @@ Social workers should recognise themselves as part of the communities in which t
 
 <br>
 
-<p style="text-align:right";>
+<div class = "right">
 `r fa("hand-holding-heart", fill = "#00A0E9", height = "30px")`
-</p>
+</div>
 
 #### 2. Relationship-based approaches
 
@@ -528,9 +528,9 @@ Relationship-based social work seeks to understand and address the psychological
 
 <br>
 
-<p style="text-align:right";>
+<div class = "right">
 `r fa("comment", fill = "#00A0E9", height = "30px")`
-</p>
+</div>
 
 #### 3. Advocacy based practice
 
@@ -548,9 +548,9 @@ The implication of this discussion is that social workers should include convers
 
 <br>
 
-<p style="text-align:right";>
+<div class = "right">
 `r fa("users-cog", fill = "#00A0E9", height = "30px")`
-</p>
+</div>
 
 
 #### 4. The role of supervision
@@ -582,9 +582,9 @@ More recently, there have been discussions around the commonalities between the 
 
 <div class = "act_box">
 
-<p style="text-align:right";>
+<div class = "right">
 `r fa("user-friends", fill = "#00A0E9", height = "30px")`
-</p>
+</div>
 
 ## Case study
 
@@ -634,9 +634,16 @@ A plan was created and taken to the council's resource panel for approval. At th
 
 # Padlet Discussion Board
 
-<div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4"><p style="padding:0;margin:0"><iframe src="https://padlet.com/9e4keezwnh/c8j8kw2nbrcxndok" frameborder="0" allow="camera;microphone;geolocation" style="width:100%;height:800px;display:none;padding:0;margin:0"
-onload="this.style.display='block';"></iframe></p><div style="padding:8px;text-align:right;margin:0;"><a href="https://padlet.com?ref=embed" style="padding:0;margin:0;border:none;display:block;line-height:1;height:16px" target="_blank"><img src="https://padlet.net/embeds/made_with_padlet.png" width="86" height="16" style="padding:0;margin:0;background:none;border:none;display:inline;box-shadow:none" alt="Made with Padlet"></a></div></div>
-
+<div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4"><p style="padding:0;margin:0">
+<p style="padding:0;margin:0">
+<iframe src="https://padlet.com/9e4keezwnh/c8j8kw2nbrcxndok" frameborder="0" allow="camera;microphone;geolocation" style="width:100%;height:800px;display:none;padding:0;margin:0"
+onload="this.style.display='block';"
+data-external="1">
+</iframe></p>
+<div style="padding:8px;text-align:right;margin:0;">
+<a href="https://padlet.com?ref=embed" style="padding:0;margin:0;border:none;display:block;line-height:1;height:16px" target="_blank">
+<img src="https://padlet.net/embeds/made_with_padlet.png" width="86" height="16" style="padding:0;margin:0;background:none;border:none;display:inline;box-shadow:none" alt="Made with Padlet"></a>
+</div></div>
 <aside>
 <font size = 2>
 How might poverty have shaped your social work practice or children's services? What recommendations from BASW could be implemented and how?

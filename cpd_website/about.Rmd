@@ -9,3 +9,5 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 The library is developed and maintained by Dr. [Calum Webb](https://www.sheffield.ac.uk/socstudies/people/academic-staff/calum-webb) and is built using `Distill 1.0` in `R`.
+
+The SCS Library is built on three principles: that it is **open-access**, **open-source**, and **open-to-all**. This means that the content will never be behind a paywall, as long as it is online, and that all of the code and content will be held on a public repository that anyone can use for their own purposes, as long as they are not commercial in nature. Anyone can email <a href=mailto:c.j.webb@sheffield.ac.uk>c.j.webb[@]sheffield.ac.uk</a> to discuss how they can create their own interactive resource for the library. 

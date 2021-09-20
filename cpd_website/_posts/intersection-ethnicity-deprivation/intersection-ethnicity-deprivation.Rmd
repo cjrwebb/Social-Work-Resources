@@ -8,8 +8,9 @@ author:
     affiliation: The University of Sheffield
     affiliation_url: https://www.sheffield.ac.uk
 date: 09-13-2020
-base_url: http://scslibrary.calumwebb.uk
+base_url: http://scslibrary.calumwebb.uk/
 preview: "http://scslibrary.calumwebb.uk/posts/intersection-ethnicity-deprivation/Media/preview.jpg"
+image: "http://scslibrary.calumwebb.uk/posts/intersection-ethnicity-deprivation/Media/preview.png"
 bibliography: "../../../data_resources/biblio.bib"
 csl: "../../../data_resources/the-open-university-numeric-superscript.csl"
 categories:
@@ -22,7 +23,7 @@ categories:
 twitter:
  site: "@uniofsheffSW"
  creator: "@cjrwebb"
- preview: "http://scslibrary.calumwebb.uk/posts/intersection-ethnicity-deprivation/Media/preview.jpg"
+ image: "http://scslibrary.calumwebb.uk/posts/intersection-ethnicity-deprivation/Media/preview.png"
 output: 
   distill::distill_article:
     toc: true
@@ -37,6 +38,10 @@ output:
 div.act_box { background-color:rgba(75, 168, 244, 0.3); color:rgba(0, 0, 0, 0.8); border-radius: 5px; padding: 20px;}
 
 div.revis_box { background-color:rgba(246, 214, 100, 0.3); color:rgba(0, 0, 0, 0.8); border-radius: 5px; padding: 20px;}
+
+.right {
+  float: right;
+}
 
 </style>
 
@@ -108,7 +113,7 @@ We then tend to make the logical error of assuming we can simply 'add together' 
 The importance of intersectionality can't be understated, and while it is still largely associated with the social sciences and critical social theory, the concept has been essential in improving clinical and epidemiological research.[@mullings2006intersectionality; @bauer2014incorporating; @holman2020mapping] As briefly discussed, and as this resource will go on to demonstrate below, it is essential for social workers to develop an intersectional understanding of (at least) the intersection of ethnicity and deprivation to understand child welfare inequalities.
 
 <center>
-<iframe width="560" height="385" src="https://www.youtube-nocookie.com/embed/rwqnC1fy_zc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="385" src="https://www.youtube-nocookie.com/embed/rwqnC1fy_zc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>
 </center>
 
 <aside><font size = 2>Watch the following animated explanation of intersectionality from [Dan Holman](https://www.sheffield.ac.uk/socstudies/people/academic-staff/daniel-holman), [Sarah Salway](https://www.sheffield.ac.uk/socstudies/people/academic-staff/sarah-salway), and [Andrew Bell](https://www.sheffield.ac.uk/smi/people/academic/andrew-bell) at the University of Sheffield. You can find out more about their project 'Intersectional Health' [here](https://intersectionalhealth.org).</font></aside>
@@ -118,9 +123,9 @@ The importance of intersectionality can't be understated, and while it is still 
 
 There is not the space here to discuss in depth all of the possible combinations of experiences, cultural stereotypes, and institutionalised biases and prejudices that are relevant to child and family social work and which underpin child welfare inequalities. However, a few pieces of research and writing about some specific intersections of gender, ethnicity, and class, in relation to motherhood and childhood may be worth mentioning, as they can help us think critically about our the unequal intervention rates we see in social work. Perceptions of parents behaviour and children's behaviour are often filtered through the lens of 'race' and socioeconomic status.
 
-Firstly, while focused on experiences in the US, Professor Dawn Marie Dow's book 'Mothering While Black: Boundaries and Burdens of Middle‐Class Parenthood' explores the intersection of motherhood, middle-class, and Black identity.[@dow2019mothering] In it, she discusses how access to greater socioeconomic capital (from being middle class), does not erase or alleviate the many discriminatory experiences associated with ethnicity, and many feel pressure to move to predominantly White, middle-class neighbourhood where these experiences can become more acute. This is especially the case when it comes to the schooling of children, where many schools see the education institution as 'race-neutral', resulting in a great deal of labour from mothers to educate schools on the effects of racism. Black children must simultaneously confront low expectations from teachers,[@rollock2014colour] racism from peers in predominant White schools,[@lander2015racism] and high expectations of parents. A middle-class identity does not erase the suspision Black children and parents face from many institutions, and in some cases this might even be exacerbated; removing the structural inequalities related to the overrepresentation of Black families in poverty does not completely remove the effects of other forms of racism.
+Firstly, while focused on experiences in the US, Professor Dawn Marie Dow's book 'Mothering While Black: Boundaries and Burdens of Middle‐Class Parenthood' explores the intersection of motherhood, middle-class, and Black identity.[@dow2019mothering] In it, she discusses how access to greater socioeconomic capital (from being middle class), does not erase or alleviate the many discriminatory experiences associated with ethnicity, and many feel pressure to move to predominantly White, middle-class neighbourhoods where these experiences can become more acute. This is especially the case when it comes to the schooling of children, where many schools see education as a 'race-neutral' institution, resulting in a great deal of labour from mothers to educate schools on the effects of racism. Black children must simultaneously confront low expectations from teachers,[@rollock2014colour] racism from peers in predominant White schools,[@lander2015racism] and high expectations of parents. A middle-class identity does not erase the suspision Black children and parents face from many institutions, and in some cases this might even be exacerbated; removing the race-based structural inequalities related to the overrepresentation of Black families in poverty does not completely remove the effects of other forms of racism or effects of structural racism.
 
-The experiences of White working-class mothers living in poverty are often ignored, oversimplified, or undertheorised and misrepresented, despite parodies being paraded in front of our faces very frequently. This is despite a wealth of sociological literature on the subject. Dr. Lisa McKenzie's book 'Getting By' explores the identities and experiences of White working class women living in the St. Anne's estate in Nottingham.[@mckenzie2015getting] In it, McKenzie describes the impact of the denigration of working class White women, especially those who live in diverse, multicultural areas, and how these narratives affect the people they stigmatise; particularly how stereotypes of laziness, irresponsibility, and promiscuity paint them as moral villains. In the US, Newitz & Wray (1996) highlight how the term 'white trash' performs a function to racialise 'low' socioeconomic status, positioning it in relation to ethnicity and simultaneously reinforcing the idea that to be White and poor is atypically abhorrent but to be non-White and poor is normal.[@newitz1996white] Similarly, Professor Imogen Tyler examines the figure of the 'female chav', and the "vilification of young white working-class mothers ... that embodies historically familiar and contemporary anxieties about female sexuality, reproduction, fertility, and 'racial mixing.'"[@tyler2008chav] Often, the narratives of working-class women living in poverty are individualised, and ignore structural factors. 
+The experiences of White working-class mothers living in poverty are often ignored, oversimplified, or undertheorised and misrepresented, despite parodies being paraded in front of our faces very frequently. This is despite a wealth of sociological literature on the subject. Dr. Lisa McKenzie's book 'Getting By' explores the identities and experiences of White working class women living in the St. Anne's estate in Nottingham.[@mckenzie2015getting] In it, McKenzie describes the impact of the denigration of working class White women, especially those who live in diverse, multicultural areas, and how these narratives affect the people they stigmatise; particularly how stereotypes of laziness, irresponsibility, and promiscuity paint them as moral villains. Many of these stereotypes are also applied to, or originated in, racist language and narratives directed at Black women. In the US, Newitz & Wray (1996) highlight how the term 'white trash' performs a function to racialise 'low' socioeconomic status, explicitly positioning it in relation to ethnicity/race and simultaneously reinforcing the idea in a White supremacist society^[It is important here to state explicitly that a White supremacist society does not mean that Ku Klux Klan leaders and racists hold all the power in office, or that White people have all the power and privileges in law and so on, as many people mistakenly believe. A White supremacist society means a society with a history of culture, beliefs, norms, traditions, and laws that have been associated with the idea that White people are superior to people of other 'races', many of those beliefs, laws, and norms may no longer be expressed individually but their existence has far-reaching effects into the future. Countries that were built on slavery and then anti-miscegenation and segregation laws clearly had a historical view of Black and other groups of people as inferior to White people. Coloniser nations and colonial settler nations drew their legitimacy in taking land from indigenous populations from the idea that White Europeans were superior to the people who lived on the land and were bringing civility and order to those countries. These supremacist ideas were back by many institutions, including in education, where 'race science' taught that White people were biologically superior. These ideas still exist and resurface in various forms today. Read the work of Angela Saini (Superior: the return of race science) and Dorothy E Roberts (Killing the Black Body and Fatal Intervention) for an introduction.] that to be White and poor is atypically abhorrent, 'not quite White', but to be non-White and poor is normal.[@newitz1996white] Similarly, Professor Imogen Tyler examines the figure of the 'female chav', and the "vilification of young white working-class mothers ... that embodies historically familiar and contemporary anxieties about female sexuality, reproduction, fertility, and 'racial mixing.'"[@tyler2008chav] Often, the narratives of working-class women living in poverty are individualised, and ignore structural factors. 
 
 Thirdly, and associated with the above example, White mothers of mixed heritage children - especially single White mothers - are especially vilified. Narratives of disgust about White working class women living in poverty with Mixed Heritage children are exchanged unchallenged most of the time, often in the form of jokes (see image below). These attitudes are reflective of the Fletcher report in 1930, that classified White women in relationships with Black men as 'mentally weak', 'young and reckless', 'prostitutes', or forced into marriage through pregnancy.[@fletcher1930report] In our culture they are often seen as permissable subjects of ridicule, and their children face the sharp end of both racism and class prejudice.
 
@@ -137,9 +142,8 @@ knitr::include_graphics("Media/vicky-pollard-2.jpg")
 
 <div class = "act_box">
 
-<p style="text-align:right";>
-`r fa("readme", fill = "#00A0E9", height = "30px")`
-</p>
+<div class = "right">`r fa("readme", fill = "#00A0E9", height = "30px")`</div>
+
 
 #### Key messages from research
 
@@ -154,7 +158,7 @@ knitr::include_graphics("Media/vicky-pollard-2.jpg")
 
 ## Explaining Intersectional Ethnicity/Deprivation Patterns in Children Looked After Rates
 
-<iframe width="840" height="470" src="https://www.youtube-nocookie.com/embed/WD3KhkASkFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="840" height="470" src="https://www.youtube-nocookie.com/embed/WD3KhkASkFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>
 
 <aside>
 <font size=2>
@@ -174,9 +178,8 @@ Below are three tables that can be expanded and hidden. First, let's discuss the
 The 'incidence rate ratio (IRR)' refers to the number of children per 10,000 in that ethnic group we would expect to experience an intervention for every one White British child experiencing that intervention per 10,000 White British children. In other words, an IRR *less than one* means that that ethnic group has lower rates than the White British rates in that context, and an IRR *greater than one* means that the ethnic group has higher rates than the White British rates in that context.
 
 <div class = "act_box">
-<p style="text-align:right";>
-`r fa("star-half-alt", fill = "#00A0E9", height = "30px")`
-</p>
+
+<div class = "right">`r fa("star-half-alt", fill = "#00A0E9", height = "30px")`</div>
 
 #### Interpreting an IRR
 
@@ -280,9 +283,7 @@ knitr::include_graphics("Media/map.png")
 
 <div class = "act_box">
 
-<p style="text-align:right";>
-`r fa("glasses", fill = "#00A0E9", height = "30px")`
-</p>
+<div class = "right">`r fa("glasses", fill = "#00A0E9", height = "30px")`</div>
 
 #### Example: Combining the map and the ethnic disproportionality tables to better understand ethnic disproportionality.
 
@@ -294,9 +295,7 @@ Using the map above, we can see that the red/dark orange areas are concentrated 
 
 We can see that low deprivation areas are mostly in West Sheffield. Middle deprivation areas are dispersed and found in the city centre. These are the areas where Black African children have higher rates of 'in Need' status in their neighbourhoods compared to White British children in the same areas, because their IRR is greater than 1. Here, it might be interesting to explore what support may be missing, or what systemic factors may be in place that created greater risk of being in need for Black African children (for example, are there discriminatory housing practices?)
 
-<p style="text-align:right";>
-`r fa("mouse-pointer", fill = "#00A0E9", height = "30px")`
-</p>
+<div class = "right">`r fa("mouse-pointer", fill = "#00A0E9", height = "30px")`</div>
 
 #### Exercise
 
@@ -312,9 +311,8 @@ We can see that low deprivation areas are mostly in West Sheffield. Middle depri
 <br><br>
 
 <div class = "revis_box">
-<p style="text-align:right";>
-`r fa("lightbulb", fill = "#C7BF78", height = "30px")`
-</p>
+
+<div class = "right">`r fa("lightbulb", fill = "#C7BF78", height = "30px")`</div>
 
 #### Individual, institutional, and structural racism[@lawrence2004structural]
 
@@ -346,9 +344,7 @@ Structural racism in culture also includes representations of ethnic minorities 
 
 <div class = "act_box">
 
-<p style="text-align:right";>
-`r fa("user-friends", fill = "#00A0E9", height = "30px")`
-</p>
+<div class = "right">`r fa("user-friends", fill = "#00A0E9", height = "30px")`</div>
 
 
 ## Case study
@@ -400,7 +396,8 @@ The referral was escalated to an assessment on the basis of suspected neglect.
 # Padlet Discussion Board
 
 <div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4"><p style="padding:0;margin:0"><iframe src="https://padlet.com/9e4keezwnh/ejeh98s5wek6dbno" frameborder="0" allow="camera;microphone;geolocation" style="width:100%;height:800px;display:none;padding:0;margin:0"
-onload="this.style.display='block';"></iframe></p><div style="padding:8px;text-align:right;margin:0;"><a href="https://padlet.com?ref=embed" style="padding:0;margin:0;border:none;display:block;line-height:1;height:16px" target="_blank"><img src="https://padlet.net/embeds/made_with_padlet.png" width="86" height="16" style="padding:0;margin:0;background:none;border:none;display:inline;box-shadow:none" alt="Made with Padlet"></a></div></div>
+onload="this.style.display='block';"
+data-external="1"></iframe></p><div style="padding:8px;text-align:right;margin:0;"><a href="https://padlet.com?ref=embed" style="padding:0;margin:0;border:none;display:block;line-height:1;height:16px" target="_blank"><img src="https://padlet.net/embeds/made_with_padlet.png" width="86" height="16" style="padding:0;margin:0;background:none;border:none;display:inline;box-shadow:none" alt="Made with Padlet"></a></div></div>
 
 <aside>
 <font size=2>

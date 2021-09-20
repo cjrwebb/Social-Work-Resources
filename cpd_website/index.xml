@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>SCS Social Work Interactive Resources Library</title>
+    <link>http://scslibrary.calumwebb.uk/</link>
+    <atom:link href="http://scslibrary.calumwebb.uk/index.xml" rel="self" type="application/rss+xml"/>
+    <description>SCS Social Work Interactive Resources Library
+</description>
+    <image>
+      <title>SCS Social Work Interactive Resources Library</title>
+      <url>http://scslibrary.calumwebb.uk/tuos_logo_small.jpeg</url>
+      <link>http://scslibrary.calumwebb.uk/</link>
+    </image>
+    <generator>Distill</generator>
+    <lastBuildDate>Wed, 07 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Introducing Child Welfare Inequalities I: Poverty
+</title>
+      <dc:creator>Calum Webb</dc:creator>
+      <link>http://scslibrary.calumwebb.uk/posts/introducing-cwi-1-poverty</link>
+      <description>This interactive resource is designed to provide an introduction to the idea of child welfare inequalities, their scale, and why they are important, focusing firstly on poverty. You will explore: What are child welfare inequalities and why are they important? What do we currently know about socioeconomic inequalities in intervention? What unanswered questions are there, what framework can we use to understand them, and what are the current policy and practice recommendations?</description>
+      <category>CPD 4.1</category>
+      <category>CPD 4.4</category>
+      <category>CPD 4.5</category>
+      <category>CPD 4.6</category>
+      <category>CPD 4.8</category>
+      <category>Child welfare inequalities</category>
+      <category>Poverty-aware Practice</category>
+      <guid>http://scslibrary.calumwebb.uk/posts/introducing-cwi-1-poverty</guid>
+      <pubDate>Wed, 07 Oct 2020 00:00:00 +0000</pubDate>
+      <media:content url="http://scslibrary.calumwebb.uk/posts/introducing-cwi-1-poverty/media/swingset-snow.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Child Welfare Interventions at the Intersection of Ethnicity and Deprivation</title>
+      <dc:creator>Calum Webb</dc:creator>
+      <link>http://scslibrary.calumwebb.uk/posts/intersection-ethnicity-deprivation</link>
+      <description>This resource explores the way that intervention rates in child populations differ according to deprivation and ethnicity. It introduces findings from the Child Welfare Inequalities Project that highlight that socioeconomic inequalities in child welfare interventions differ according to ethnicity. You will explore: What does ethnic disproportionality look like at a national level and in differently deprived neighbourhoods? How can you interpret ethnic disproportionality using incidence rate ratios? And how can this knowledge be used to think critically about challenging racism in children's services?</description>
+      <category>CPD 4.4</category>
+      <category>CPD 4.5</category>
+      <category>CPD 4.8</category>
+      <category>Child welfare inequalities</category>
+      <category>Data Skills</category>
+      <category>Poverty-aware Practice</category>
+      <guid>http://scslibrary.calumwebb.uk/posts/intersection-ethnicity-deprivation</guid>
+      <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
+      <media:content url="http://scslibrary.calumwebb.uk/posts/intersection-ethnicity-deprivation/Media/preview.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Data(,) Power &amp; Social Work
+</title>
+      <dc:creator>Calum Webb</dc:creator>
+      <link>http://scslibrary.calumwebb.uk/posts/data-power-social-work</link>
+      <description>This resource explores the relevance of quantitative, statistical data for social work, and what role it could have in anti-oppressive practice. You will explore: What is the relationship between data, statistics, changes in children's services, and advocacy? How is data used as a political tool in social work? How can data be harnessed within a social model of child protection?</description>
+      <category>CPD 4.4</category>
+      <category>CPD 4.5</category>
+      <category>CPD 4.8</category>
+      <category>Child welfare inequalities</category>
+      <category>Data Skills</category>
+      <guid>http://scslibrary.calumwebb.uk/posts/data-power-social-work</guid>
+      <pubDate>Thu, 27 Aug 2020 00:00:00 +0000</pubDate>
+      <media:content url="http://scslibrary.calumwebb.uk/posts/data-power-social-work/Media/preview.png" medium="image" type="image/png"/>
+    </item>
+  </channel>
+</rss>

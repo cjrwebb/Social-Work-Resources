@@ -1,0 +1,13 @@
+name: ex_1
+title: ex_1
+username:
+account: webb
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2984868
+bundleId: 3723924
+url: https://webb.shinyapps.io/ex_1/
+when: 1602334639.90955
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: Icon

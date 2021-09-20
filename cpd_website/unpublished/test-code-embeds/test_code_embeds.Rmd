@@ -1,0 +1,52 @@
+---
+title: "Test: Embedded Shinyapp Tutorials"
+description: |
+  This test shows a format for embedded tutorials running on an external Shinyapps.io server that can execute `R` code and display output using the `learnr` package. Need to figure out how to add custom jQuery and html to load the exercises on click (to optimise server use).  
+author:
+  - name: Calum Webb
+    url: https://www.sheffield.ac.uk/socstudies/people/academic-staff/calum-webb
+    affiliation: The University of Sheffield
+    affiliation_url: https://www.sheffield.ac.uk
+date: 10-07-2020
+base_url: http://scslibrary.calumwebb.uk/
+preview: "http://scslibrary.calumwebb.uk/posts/introducing-cwi-1-poverty/media/preview.png"
+image: "http://scslibrary.calumwebb.uk/posts/introducing-cwi-1-poverty/media/preview.png"
+bibliography: "../../../data_resources/biblio.bib"
+csl: "../../../data_resources/the-open-university-numeric-superscript.csl"
+categories:
+  - "Quantitative Methods"
+twitter:
+ site: "@uniofsheffSW"
+ creator: "@cjrwebb"
+ image: "http://scslibrary.calumwebb.uk/posts/introducing-cwi-1-poverty/media/preview.png"
+output: 
+  distill::distill_article:
+    toc: true
+    fig_caption: true
+    includes:
+      in_header: 
+       - "../../../data_resources/header_logo.html"
+    header-includes:
+       - "../../../data_resources/additional_styling.tex"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+`ggplot2` is an `R` package for creating graphs and plots using a 'grammar of graphics' approach. Graphs are built up in segments, starting with the data, followed by the selection of a geometric `geom_` object (e.g. are we plotting points, bars, lines), followed by aesthetic `aes()` mappings (which aesthetics of the graph do we want to change according to variable values in the data), followed by static themeing arguments.  
+
+```{r, layout="l-page-outset"}
+htmltools::HTML("<h3>Follow the exercises below to build up a basic <code>ggplot2</code> graph for a scatterplot.</h3>")
+```
+
+
+```{r, layout="l-page-outset"}
+
+knitr::include_app("https://webb.shinyapps.io/ex_1/", height = 600)
+
+```
+
+Issues 
+
+* Start over entire resource doesn't work.

@@ -5,15 +5,15 @@
       "title": "About the SCS Interactive Resources Library",
       "description": "The Sociological Studies interactive resources library provides interactive documents that draw on cutting-edge and foundational research in sociology, social work, and social policy, so that students, and social workers pursuing continued professional development, can engage with course reading and material in flexible, engaging, and collaborative ways. ",
       "author": [],
-      "contents": "\nThe library is developed and maintained by Dr. Calum Webb and is built using Distill 1.0 in R.\n\n\n\n",
-      "last_modified": "2020-10-09T12:26:33+01:00"
+      "contents": "\nThe library is developed and maintained by Dr. Calum Webb and is built using Distill 1.0 in R.\nThe SCS Library is built on three principles: that it is open-access, open-source, and open-to-all. This means that the content will never be behind a paywall, as long as it is online, and that all of the code and content will be held on a public repository that anyone can use for their own purposes, as long as they are not commercial in nature. Anyone can email c.j.webb[@]sheffield.ac.uk to discuss how they can create their own interactive resource for the library.\n\n\n\n",
+      "last_modified": "2021-09-20T11:16:39+01:00"
     },
     {
       "path": "index.html",
       "title": " ",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2020-10-09T12:26:33+01:00"
+      "last_modified": "2021-09-20T11:16:40+01:00"
     }
   ],
   "collections": ["posts/posts.json"]

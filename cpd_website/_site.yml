@@ -1,7 +1,7 @@
 name: "cpd_website"
 title: "SCS Social Work Interactive Resources Library"
 description: |
-  SCS Social Work Interactive Resources Library
+  SWIRL provides a range of open-access, open-source, and open-to-all interactive resources targeted towards social work students and social workers evidencing Continued Professional Development. It is maintained by Dr. Calum Webb and is built on Distill 1.0.
 output_dir: "_site"
 navbar:
   logo: tuos_logo_small.jpeg
@@ -11,7 +11,14 @@ navbar:
     - text: "About"
       href: about.html
 favicon: tuos_logo_small.jpeg
+preview: http://scslibrary.calumwebb.uk/posts/introducing-cwi-1-poverty/media/preview.png
+twitter:
+  site: "@uniofsheffSW"
+  creator: "@cjrwebb"
+  image: http://scslibrary.calumwebb.uk/posts/introducing-cwi-1-poverty/media/preview.png
 search: true
 output: 
   distill::distill_article:
     css: styles.css
+header:
+  image: http://scslibrary.calumwebb.uk/posts/introducing-cwi-1-poverty/media/preview.png

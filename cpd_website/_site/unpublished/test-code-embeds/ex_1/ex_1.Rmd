@@ -1,0 +1,112 @@
+---
+title: "Tutorial"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+# Need up to date packrat package to get it to install dependencies properly 
+# devtools::install_github("rstudio/packrat")
+library(learnr)
+library(janitor)
+library(tidyverse)
+knitr::opts_chunk$set(echo = FALSE)
+spending_data <- read_rds("csc_data_spend_imd.rds") %>%
+  pivot_wider(names_from = description, values_from = value) %>%
+  clean_names() %>%
+  dplyr::rename(cla_exp = 4, sg_exp = 5, ehfs_exp = 6, pop = 7, imd = 8) %>%
+  mutate(
+    cla_exp = (cla_exp*100000) / pop
+  ) %>%
+  filter(year == 2015)
+  
+
+```
+
+
+## Starting out with ggplot2
+
+### A basic correlation plot
+
+Let's start by loading in the data and telling R that we want to build a scatterplot, using the `ggplot()` initialisation function, which tells R we're building a ggplot graph, followed by a geometric object for plotting points, `geom_point()`. We have some data already loaded about children's services spending and deprivation.
+
+Let's start by visualising the correlation between Indices of Multiple Deprivation score, named `imd` in our data, and safeguarding spending per child, named `sg_exp` in our data. Click 'run' to run the code, then move to the next exercise.
+
+
+```{r ggplot-1, exercise=TRUE}
+
+ggplot(spending_data) +
+  geom_point(aes(x = imd, y = sg_exp))
+
+```
+
+## Creating your own correlation plot
+
+Now try creating your own scatterplot by replacing the `___` in the code with the correct data and variable names. Instead of `sg_exp`, this time we'll look at early help and family support spend per child. This is named `ehfs_exp` in the data. As a reminder, this is the code we ran in the last exercise.
+
+```{r, eval=FALSE, echo=TRUE}
+
+ggplot(spending_data) +
+  geom_point(aes(x = imd, y = sg_exp))
+
+```
+
+*Change the `___`s to the correct variable names to get the code to create the scatterplot*
+
+```{r ggplot-2, exercise=TRUE}
+
+ggplot(___) +
+  geom_point(aes(x = ___, y = ___))
+
+```
+
+```{r ggplot-2-solution}
+
+ggplot(spending_data) +
+  geom_point(aes(x = imd, y = ehfs_exp))
+
+```
+
+## Adding a static aesthetic to the plot
+
+Let's say that we want our scatterpoints to be a bit larger than they are. We can do that by adding a static aesthetic argument to the plot. These arguments come after the `aes()` argument in the `geom_*()` function. You can find the list of aesthetic arguments that each geometric object can take, including which ones are required, by typing `?geom_*` into the console (replace * with the name of the geometric object function). `geom_point` understands the following: `alpha`, `colour`, `fill`, `group`, `shape`, `size`, and `stroke`. Let's use `size` to make the size of our points larger. 
+
+*Try replacing the `size` argument with different values to see what you think looks best.*
+
+```{r ggplot-3, exercise=TRUE}
+
+ggplot(spending_data) +
+  geom_point(aes(x = imd, y = ehfs_exp), size = 4)
+
+```
+
+## Adding a dynamic aesthetic to the plot
+
+If we put an aesthetic argument within the `aes()` parentheses `ggplot2` expects us to link it to a variable that changes. We did this with the `y` and the `x` aesthetics, which specify the data that determines where on the Y and X axes each point will be plotted. It can be useful to use things like size (`size`), colour (`colour`), and transparency (`alpha`) to include more information in a plot or to make it more aesthetically appealing. 
+
+Let's add a dynamic colour aesthetic to our plot that is linked to local authorities' IMD score by adding `colour = imd` within the `aes()` brackets.
+
+*Try moving the `colour = imd` argument outside the `aes()` brackets and see what changes.*
+
+```{r ggplot-4, exercise=TRUE}
+
+ggplot(spending_data) +
+  geom_point(aes(x = imd, y = ehfs_exp, colour = imd), size = 4)
+
+```
+
+## Changing themes and scales
+
+We can also add additional functions to our ggplot code to change its appearance. For example, in the below code, the colour scale for IMD score has been changed from black-to-blue to blue to red using the `scale_colour_gradient()` function. We can also add labels using the `ylab()` and `xlab()` functions.
+
+*Try changing the labels and the colour choices on the new colour scale.*
+
+```{r ggplot-5, exercise=TRUE}
+
+ggplot(spending_data) +
+  geom_point(aes(x = imd, y = ehfs_exp, colour = imd), size = 4) +
+  scale_color_gradient(low = "blue", high = "red") +
+  ylab("Early Help and Family Support Expenditure") +
+  xlab("Indices of Multiple Deprivation Score")
+
+```
